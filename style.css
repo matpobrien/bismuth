@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  /* box-shadow: 2px 1px 5px black; */
+}
+
+.bismuth {
+  /* background-color: black; */
+  z-index: 101;
+  opacity: 1;
+}
+
+.layer-one {
+  z-index: 93;
+}
+.orange {
+  background-color: rgb(249, 197, 29, 1);
+  z-index: 100;
+  transition: width 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orange.transition {
+  width: 13vw;
+}
+
+.yellow {
+  background-color: #e5ea23;
+  z-index: 99;
+  transition: height 2s;
+}
+
+.yellow.transition {
+  height: 9vh;
+}
+
+.light-green {
+  background-color: #85df75;
+  z-index: 98;
+  right: 0;
+  transition: width 2s;
+}
+
+.light-green.transition {
+  width: 8vw;
+}
+
+.green {
+  background-color: #3ee48a;
+  z-index: 97;
+  bottom: 0;
+  transition: height 2s;
+}
+
+.green.transition {
+  height: 15vh;
+}
+
+.blue-green {
+  background-color: #236768;
+  z-index: 96;
+  transition: width 2s;
+}
+
+.blue-green.transition {
+  width: 27vw;
+}
+
+.teal {
+  background-color: #2bb7c2;
+  z-index: 95;
+  transition: height 2s;
+}
+
+.teal.transition {
+  height: 15vh;
+}
+
+.blue {
+  background-color: #3becff;
+  z-index: 94;
+  right: 0;
+  transition: width 2s;
+}
+
+.blue.transition {
+  width: 13vw;
+}
+
+.lilac {
+  background-color: #9d9cea;
+  z-index: 93;
+  bottom: 0;
+  transition: height 2s;
+}
+
+.lilac.transition {
+  height: 33vh;
+}
+
+.purple {
+  background-color: #580b59;
+  z-index: 92;
+  transition: width 2s;
+}
+
+.purple.transition {
+  width: 41vw;
+}
+
+.dark-red {
+  background-color: #722534;
+  z-index: 91;
+  transition: height 2s;
+}
+
+.dark-red.transition {
+  height: 20vh;
+}
+
+.red {
+  background-color: #7a0c06;
+  z-index: 90;
+  right: 0;
+  transition: width 2s;
+}
+
+.red.transition {
+  width: 16vw;
+}
+.magenta {
+  background-color: #ae2e49;
+  z-index: 89;
+  bottom: 0;
+  transition: height 2s;
+}
+
+.magenta.transition {
+  height: 48vh;
+}
+
+.fuchsia {
+  background-color: #e15cb8;
+  z-index: 88;
+  transition: width 2s;
+}
+
+.fuchsia.transition {
+  width: 56vw;
+}
+
+.pink {
+  background-color: #f75eed;
+  z-index: 87;
+}
+
+.pink.transition {
+  height: 24vh;
+}
+
+.silver-pink {
+  background-color: #f988ff;
+  z-index: 86;
+  height: 2400px;
+}
