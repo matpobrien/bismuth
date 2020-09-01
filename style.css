@@ -10,10 +10,57 @@ div {
   /* box-shadow: 2px 1px 5px black; */
 }
 
-.bismuth {
-  /* background-color: black; */
-  z-index: 101;
+#job {
+  margin-right: 5vw;
+  opacity: 0;
+  transition: opacity 1s;
+  transition-delay: 6000ms;
+}
+
+#job.transition {
   opacity: 1;
+}
+
+#title.transition {
+  opacity: 0;
+}
+
+.border {
+  background-color: #3c3834;
+  z-index: 101;
+}
+
+.grey-one,
+.grey-three {
+  width: 0;
+  transition: width 1s;
+  transition-delay: 6000ms;
+}
+
+.grey-one.transition,
+.grey-three.transition {
+  width: 1vw;
+}
+
+.grey-two,
+.grey-four {
+  height: 0;
+  width: 100vw;
+  transition: height 1s;
+  transition-delay: 6000ms;
+}
+
+.grey-two.transition,
+.grey-four.transition {
+  height: 1vw;
+}
+
+.grey-three {
+  right: 0;
+}
+
+.grey-four {
+  bottom: 0;
 }
 
 .layer-one {
@@ -22,7 +69,7 @@ div {
 .orange {
   background-color: rgb(249, 197, 29, 1);
   z-index: 100;
-  transition: width 2s;
+  transition: width 1s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +82,7 @@ div {
 .yellow {
   background-color: #e5ea23;
   z-index: 99;
-  transition: height 2s;
+  transition: height 1s;
 }
 
 .yellow.transition {
@@ -46,7 +93,7 @@ div {
   background-color: #85df75;
   z-index: 98;
   right: 0;
-  transition: width 2s;
+  transition: width 1s;
 }
 
 .light-green.transition {
@@ -57,7 +104,8 @@ div {
   background-color: #3ee48a;
   z-index: 97;
   bottom: 0;
-  transition: height 2s;
+  transition: height 1s;
+  transition-delay: 500ms;
 }
 
 .green.transition {
@@ -67,7 +115,11 @@ div {
 .blue-green {
   background-color: #236768;
   z-index: 96;
-  transition: width 2s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: width 1s;
+  transition-delay: 1000ms;
 }
 
 .blue-green.transition {
@@ -77,7 +129,8 @@ div {
 .teal {
   background-color: #2bb7c2;
   z-index: 95;
-  transition: height 2s;
+  transition: height 1s;
+  transition-delay: 1500ms;
 }
 
 .teal.transition {
@@ -88,7 +141,8 @@ div {
   background-color: #3becff;
   z-index: 94;
   right: 0;
-  transition: width 2s;
+  transition: width 1s;
+  transition-delay: 2000ms;
 }
 
 .blue.transition {
@@ -99,7 +153,8 @@ div {
   background-color: #9d9cea;
   z-index: 93;
   bottom: 0;
-  transition: height 2s;
+  transition: height 1s;
+  transition-delay: 2500ms;
 }
 
 .lilac.transition {
@@ -109,7 +164,11 @@ div {
 .purple {
   background-color: #580b59;
   z-index: 92;
-  transition: width 2s;
+  transition: width 1s;
+  transition-delay: 3000ms;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .purple.transition {
@@ -119,7 +178,8 @@ div {
 .dark-red {
   background-color: #722534;
   z-index: 91;
-  transition: height 2s;
+  transition: height 1s;
+  transition-delay: 3500ms;
 }
 
 .dark-red.transition {
@@ -130,7 +190,8 @@ div {
   background-color: #7a0c06;
   z-index: 90;
   right: 0;
-  transition: width 2s;
+  transition: width 1s;
+  transition-delay: 4000ms;
 }
 
 .red.transition {
@@ -140,7 +201,8 @@ div {
   background-color: #ae2e49;
   z-index: 89;
   bottom: 0;
-  transition: height 2s;
+  transition: height 1s;
+  transition-delay: 4500ms;
 }
 
 .magenta.transition {
@@ -150,7 +212,11 @@ div {
 .fuchsia {
   background-color: #e15cb8;
   z-index: 88;
-  transition: width 2s;
+  transition: width 1s;
+  transition-delay: 5000ms;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .fuchsia.transition {
@@ -160,6 +226,8 @@ div {
 .pink {
   background-color: #f75eed;
   z-index: 87;
+  transition: height 1s;
+  transition-delay: 5500ms;
 }
 
 .pink.transition {
