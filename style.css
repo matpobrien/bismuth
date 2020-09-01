@@ -14,7 +14,7 @@ div {
   margin-right: 5vw;
   opacity: 0;
   transition: opacity 1s;
-  transition-delay: 6000ms;
+  transition-delay: 5000ms;
 }
 
 #job.transition {
@@ -34,7 +34,7 @@ div {
 .grey-three {
   width: 0;
   transition: width 1s;
-  transition-delay: 6000ms;
+  transition-delay: 5000ms;
 }
 
 .grey-one.transition,
@@ -154,7 +154,7 @@ div {
   z-index: 93;
   bottom: 0;
   transition: height 1s;
-  transition-delay: 2500ms;
+  transition-delay: 2400ms;
 }
 
 .lilac.transition {
@@ -165,7 +165,7 @@ div {
   background-color: #580b59;
   z-index: 92;
   transition: width 1s;
-  transition-delay: 3000ms;
+  transition-delay: 2800ms;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -179,7 +179,7 @@ div {
   background-color: #722534;
   z-index: 91;
   transition: height 1s;
-  transition-delay: 3500ms;
+  transition-delay: 3100ms;
 }
 
 .dark-red.transition {
@@ -191,7 +191,7 @@ div {
   z-index: 90;
   right: 0;
   transition: width 1s;
-  transition-delay: 4000ms;
+  transition-delay: 3400ms;
 }
 
 .red.transition {
@@ -202,7 +202,7 @@ div {
   z-index: 89;
   bottom: 0;
   transition: height 1s;
-  transition-delay: 4500ms;
+  transition-delay: 3700ms;
 }
 
 .magenta.transition {
@@ -213,7 +213,7 @@ div {
   background-color: #e15cb8;
   z-index: 88;
   transition: width 1s;
-  transition-delay: 5000ms;
+  transition-delay: 4000ms;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -227,7 +227,7 @@ div {
   background-color: #f75eed;
   z-index: 87;
   transition: height 1s;
-  transition-delay: 5500ms;
+  transition-delay: 4200ms;
 }
 
 .pink.transition {
