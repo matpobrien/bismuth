@@ -9,12 +9,27 @@ div {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  /* box-shadow: 2px 1px 5px black; */
+  /* box-shadow: 5px 1px 15px #3c3834; */
 }
 
 h1 {
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.invisilayer {
+  z-index: 87;
+}
+
+.remove h1 {
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#enabled {
+  visibility: visible;
 }
 
 .bismuth {
@@ -28,7 +43,7 @@ h1 {
   margin-bottom: 1vh;
   opacity: 0;
   transition: opacity 1s;
-  transition-delay: 5000ms;
+  transition-delay: 7000ms;
 }
 
 #job.transition {
@@ -39,7 +54,8 @@ h1 {
   font-family: "Lexend Peta";
   color: #3c3834;
   font-size: 3rem;
-  transition: color 0.5s;
+  transition: opacity 2s;
+  transition-timing-function: ease-out;
   letter-spacing: 0;
 }
 
@@ -51,6 +67,34 @@ h1 {
   opacity: 0;
 }
 
+.remove {
+  position: relative;
+  top: 90%;
+  bottom: 0;
+  height: 8vh;
+  width: 100%;
+  z-index: 97;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#remove,
+#enable {
+  font-family: "Lexend Peta";
+  color: #33bb71;
+  position: absolute;
+  transition: color 1s;
+  font-size: 1.25rem;
+}
+
+#remove.transition {
+}
+
+#remove:hover {
+  color: #2da463;
+}
+
 .border {
   background-color: #3c3834;
   z-index: 101;
@@ -60,7 +104,7 @@ h1 {
 .grey-three {
   width: 0;
   transition: width 1s;
-  transition-delay: 5000ms;
+  transition-delay: 7500ms;
 }
 
 .grey-one.transition,
@@ -73,7 +117,7 @@ h1 {
   height: 0;
   width: 100vw;
   transition: height 1s;
-  transition-delay: 5000ms;
+  transition-delay: 7500ms;
 }
 
 .grey-two.transition,
@@ -89,13 +133,100 @@ h1 {
   bottom: 0;
 }
 
-.layer-one {
-  z-index: 93;
+.translate-right.transition {
+  transition: transform 2s;
+  transition-delay: 0s;
 }
+
+.translate-left.transition {
+  transition: transform 2s;
+  transition-delay: 0s;
+}
+
+.orange.translate-right.transition,
+.light-green.translate-left.transition {
+  transform: scaleX(0.08);
+}
+
+.orange.translate-left.transition,
+.light-green.translate-right.transition,
+.blue-green.translate-right.transition,
+.blue.translate-left.transition {
+  transform: scaleX(0.13);
+}
+
+.purple.translate-right.transition,
+.red.translate-left.transition {
+  transform: scaleX(0.16);
+}
+
+.fuchsia.translate-right.transition,
+.silver-pink.translate-left.transition {
+  transform: scaleX(0.18);
+}
+
+.blue-green.translate-left.transition,
+.blue.translate-right.transition {
+  transform: scaleX(0.27);
+}
+
+.purple.translate-left.transition,
+.red.translate-right.transition {
+  transform: scaleX(0.41);
+}
+
+.fuchsia.translate-left.transition,
+.silver-pink.translate-right.transition {
+  transform: scaleX(0.56);
+}
+
+.translate-down.transition {
+  transition: transform 1s;
+  transition-delay: 0s;
+}
+.translate-up.transition {
+  transition: transform 1s;
+  transition-delay: 0s;
+}
+
+.teal.translate-down.transition,
+.lilac.translate-up.transition {
+  transform: scaleY(0.33);
+}
+
+.teal.translate-up.transition,
+.lilac.translate-down.transition {
+  transform: scaleY(0.15);
+}
+
+.dark-red.translate-up.transition,
+.magenta.translate-down.transition {
+  transform: scaleY(0.2);
+}
+
+.dark-red.translate-down.transition,
+.magenta.translate-up.transition {
+  transform: scaleY(0.47);
+}
+
+.green.translate-up.transition,
+.yellow.translate-down.transition {
+  transform: scaleY(0.15);
+}
+
+.green.translate-down.transition,
+.yellow.translate-up.transition {
+  transform: scaleY(0.09);
+}
+.pink.translate-down.transition {
+  transform: scaleY(0.6);
+}
+
 .orange {
   background-color: rgb(249, 197, 29, 1);
   z-index: 100;
   transition: transform 2s;
+  transition-delay: 2500ms;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,6 +241,7 @@ h1 {
   background-color: #e5ea23;
   z-index: 99;
   transition: transform 2s;
+  transition-delay: 2500ms;
   transform-origin: top;
 }
 
@@ -122,6 +254,7 @@ h1 {
   z-index: 98;
   right: 0;
   transition: transform 1500ms;
+  transition-delay: 2500ms;
   transform-origin: right;
 }
 
@@ -138,7 +271,7 @@ h1 {
   z-index: 97;
   bottom: 0;
   transition: transform 1s;
-  transition-delay: 500ms;
+  transition-delay: 3000ms;
   transform-origin: bottom;
 }
 
@@ -152,12 +285,13 @@ h1 {
 
 .blue-green {
   background-color: #236768;
+  top: 0;
   z-index: 96;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   transition: transform 1s;
-  transition-delay: 750ms;
+  transition-delay: 3250ms;
   transform-origin: left;
 }
 
@@ -177,8 +311,9 @@ h1 {
   background-color: #2bb7c2;
   z-index: 95;
   transition: transform 1s;
-  transition-delay: 1000ms;
+  transition-delay: 3500ms;
   transform-origin: top;
+  top: 0;
 }
 
 .teal.transition {
@@ -192,10 +327,11 @@ h1 {
 .blue {
   background-color: #3becff;
   z-index: 94;
-  right: 0;
   transition: transform 1s;
   transform-origin: right;
-  transition-delay: 1250ms;
+  transition-delay: 3750ms;
+  right: 0;
+  top: 0;
 }
 
 .blue.transition {
@@ -211,7 +347,7 @@ h1 {
   z-index: 93;
   bottom: 0;
   transition: transform 1s;
-  transition-delay: 1500ms;
+  transition-delay: 4000ms;
   transform-origin: bottom;
 }
 
@@ -227,11 +363,12 @@ h1 {
   background-color: #580b59;
   z-index: 92;
   transition: transform 1s;
-  transition-delay: 1750ms;
+  transition-delay: 4250ms;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   transform-origin: left;
+  top: 0;
 }
 
 .purple.transition {
@@ -250,8 +387,9 @@ h1 {
   background-color: #722534;
   z-index: 91;
   transition: transform 1s;
-  transition-delay: 2000ms;
+  transition-delay: 4500ms;
   transform-origin: top;
+  top: 0;
 }
 
 .dark-red.transition {
@@ -265,10 +403,11 @@ h1 {
 .red {
   background-color: #7a0c06;
   z-index: 90;
+  top: 0;
   right: 0;
   transition: transform 1s;
   transform-origin: right;
-  transition-delay: 2250ms;
+  transition-delay: 4750ms;
 }
 
 .red.transition {
@@ -284,7 +423,7 @@ h1 {
   z-index: 89;
   bottom: 0;
   transition: transform 1s;
-  transition-delay: 2750ms;
+  transition-delay: 5250ms;
   transform-origin: bottom;
 }
 
@@ -300,11 +439,12 @@ h1 {
   background-color: #e15cb8;
   z-index: 88;
   transition: transform 1s;
-  transition-delay: 3250ms;
+  transition-delay: 5750ms;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   transform-origin: left;
+  top: 0;
 }
 
 .fuchsia.transition {
@@ -319,8 +459,9 @@ h1 {
   background-color: #f75eed;
   z-index: 87;
   transition: transform 1s;
-  transition-delay: 3750ms;
+  transition-delay: 6250ms;
   transform-origin: top;
+  top: 0;
 }
 
 .pink.transition {
@@ -330,4 +471,18 @@ h1 {
 .silver-pink {
   background-color: #f988ff;
   z-index: 86;
+  transition: transform 2s;
+  transition-delay: 6750ms;
+  transform-origin: right;
+  right: 0;
+  top: 0;
+}
+
+.silver-pink.transition {
+  transform: scaleX(0.18);
+}
+
+.light-pink {
+  background-color: #fbc9ef;
+  z-index: 85;
 }
