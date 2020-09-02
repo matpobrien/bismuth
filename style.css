@@ -12,6 +12,13 @@ div {
 
 h1 {
   font-size: 1.5rem;
+  cursor: pointer;
+}
+
+img {
+  position: fixed;
+  right: 16vw;
+  top: 12vw;
 }
 
 .bismuth {
@@ -111,6 +118,10 @@ h1 {
   width: 8vw;
 }
 
+.light-green.open-music {
+  width: 0;
+}
+
 .green {
   background-color: #3ee48a;
   z-index: 97;
@@ -121,6 +132,10 @@ h1 {
 
 .green.transition {
   height: 15vh;
+}
+
+.green.open-music {
+  height: 0;
 }
 
 .blue-green {
@@ -137,6 +152,14 @@ h1 {
   width: 27vw;
 }
 
+.blue-green.open-music {
+  width: 100vw;
+}
+
+.blue-green.open-film {
+  width: 0;
+}
+
 .teal {
   background-color: #2bb7c2;
   z-index: 95;
@@ -146,6 +169,10 @@ h1 {
 
 .teal.transition {
   height: 15vh;
+}
+
+.teal.open-film {
+  height: 0;
 }
 
 .blue {
@@ -160,6 +187,10 @@ h1 {
   width: 13vw;
 }
 
+.blue.open-film {
+  width: 0;
+}
+
 .lilac {
   background-color: #9d9cea;
   z-index: 93;
@@ -170,6 +201,10 @@ h1 {
 
 .lilac.transition {
   height: 33vh;
+}
+
+.lilac.open-film {
+  height: 0;
 }
 
 .purple {
@@ -186,6 +221,14 @@ h1 {
   width: 41vw;
 }
 
+.purple.open-film {
+  width: 100vw;
+}
+
+.purple.open-writing {
+  width: 0;
+}
+
 .dark-red {
   background-color: #722534;
   z-index: 91;
@@ -195,6 +238,10 @@ h1 {
 
 .dark-red.transition {
   height: 20vh;
+}
+
+.dark-red.open-writing {
+  height: 0;
 }
 
 .red {
@@ -208,6 +255,11 @@ h1 {
 .red.transition {
   width: 16vw;
 }
+
+.red.open-writing {
+  width: 0;
+}
+
 .magenta {
   background-color: #ae2e49;
   z-index: 89;
@@ -218,6 +270,10 @@ h1 {
 
 .magenta.transition {
   height: 48vh;
+}
+
+.magenta.open-writing {
+  height: 0;
 }
 
 .fuchsia {
@@ -232,6 +288,10 @@ h1 {
 
 .fuchsia.transition {
   width: 56vw;
+}
+
+.fuchsia.open-writing {
+  width: 100vw;
 }
 
 .pink {
