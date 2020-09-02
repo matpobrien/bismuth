@@ -11,32 +11,36 @@ title.addEventListener("click", () => {
   });
 });
 
-document.querySelector(".music").addEventListener("click", () => {
-  document.querySelector(".blue-green").classList.toggle("open-music");
+const openMusic = () => {
   document.querySelector(".light-green").classList.toggle("open-music");
   document.querySelector(".green").classList.toggle("open-music");
+  document.querySelector(".blue-green").classList.toggle("open-music");
+};
+
+document.querySelector(".music").addEventListener("click", () => {
+  openMusic();
 });
 
-document.querySelector(".film").addEventListener("click", () => {
+const openFilm = () => {
   document.querySelector(".blue-green").classList.toggle("open-film");
-  document.querySelector(".light-green").classList.toggle("open-music");
-  document.querySelector(".green").classList.toggle("open-music");
   document.querySelector(".teal").classList.toggle("open-film");
   document.querySelector(".blue").classList.toggle("open-film");
   document.querySelector(".lilac").classList.toggle("open-film");
   document.querySelector(".purple").classList.toggle("open-film");
+};
+
+document.querySelector(".film").addEventListener("click", () => {
+  openMusic();
+  openFilm();
 });
 
-document.querySelector(".writing").addEventListener("click", () => {
-  document.querySelector(".light-green").classList.toggle("open-music");
-  document.querySelector(".green").classList.toggle("open-music");
-  document.querySelector(".blue-green").classList.toggle("open-film");
-  document.querySelector(".teal").classList.toggle("open-film");
-  document.querySelector(".blue").classList.toggle("open-film");
-  document.querySelector(".lilac").classList.toggle("open-film");
-  document.querySelector(".purple").classList.toggle("open-writing");
-  document.querySelector(".dark-red").classList.toggle("open-writing");
-  document.querySelector(".red").classList.toggle("open-writing");
-  document.querySelector(".magenta").classList.toggle("open-writing");
-  document.querySelector(".fuchsia").classList.toggle("open-writing");
-});
+const openWriting = () => {
+  openFilm();
+  document.querySelector(".writing").addEventListener("click", () => {
+    document.querySelector(".purple").classList.toggle("open-writing");
+    document.querySelector(".dark-red").classList.toggle("open-writing");
+    document.querySelector(".red").classList.toggle("open-writing");
+    document.querySelector(".magenta").classList.toggle("open-writing");
+    document.querySelector(".fuchsia").classList.toggle("open-writing");
+  });
+};
