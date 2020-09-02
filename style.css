@@ -21,9 +21,6 @@ h1 {
   z-index: 87;
 }
 
-.remove h1 {
-}
-
 .hidden {
   visibility: hidden;
 }
@@ -86,9 +83,6 @@ h1 {
   position: absolute;
   transition: color 1s;
   font-size: 1.25rem;
-}
-
-#remove.transition {
 }
 
 #remove:hover {
