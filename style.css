@@ -10,8 +10,19 @@ div {
   /* box-shadow: 2px 1px 5px black; */
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
+.bismuth {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
 #job {
   margin-right: 5vw;
+  margin-bottom: 1vh;
   opacity: 0;
   transition: opacity 1s;
   transition-delay: 5000ms;
@@ -47,7 +58,7 @@ div {
   height: 0;
   width: 100vw;
   transition: height 1s;
-  transition-delay: 6000ms;
+  transition-delay: 5000ms;
 }
 
 .grey-two.transition,
@@ -69,7 +80,7 @@ div {
 .orange {
   background-color: rgb(249, 197, 29, 1);
   z-index: 100;
-  transition: width 1s;
+  transition: width 2s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +93,7 @@ div {
 .yellow {
   background-color: #e5ea23;
   z-index: 99;
-  transition: height 1s;
+  transition: height 2s;
 }
 
 .yellow.transition {
@@ -93,7 +104,7 @@ div {
   background-color: #85df75;
   z-index: 98;
   right: 0;
-  transition: width 1s;
+  transition: width 1500ms;
 }
 
 .light-green.transition {
@@ -119,7 +130,7 @@ div {
   align-items: center;
   justify-content: flex-end;
   transition: width 1s;
-  transition-delay: 1000ms;
+  transition-delay: 750ms;
 }
 
 .blue-green.transition {
@@ -130,7 +141,7 @@ div {
   background-color: #2bb7c2;
   z-index: 95;
   transition: height 1s;
-  transition-delay: 1500ms;
+  transition-delay: 1000ms;
 }
 
 .teal.transition {
@@ -142,7 +153,7 @@ div {
   z-index: 94;
   right: 0;
   transition: width 1s;
-  transition-delay: 2000ms;
+  transition-delay: 1250ms;
 }
 
 .blue.transition {
@@ -154,7 +165,7 @@ div {
   z-index: 93;
   bottom: 0;
   transition: height 1s;
-  transition-delay: 2400ms;
+  transition-delay: 1500ms;
 }
 
 .lilac.transition {
@@ -165,7 +176,7 @@ div {
   background-color: #580b59;
   z-index: 92;
   transition: width 1s;
-  transition-delay: 2800ms;
+  transition-delay: 1750ms;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -179,7 +190,7 @@ div {
   background-color: #722534;
   z-index: 91;
   transition: height 1s;
-  transition-delay: 3100ms;
+  transition-delay: 2000ms;
 }
 
 .dark-red.transition {
@@ -191,7 +202,7 @@ div {
   z-index: 90;
   right: 0;
   transition: width 1s;
-  transition-delay: 3400ms;
+  transition-delay: 2250ms;
 }
 
 .red.transition {
@@ -202,7 +213,7 @@ div {
   z-index: 89;
   bottom: 0;
   transition: height 1s;
-  transition-delay: 3700ms;
+  transition-delay: 2750ms;
 }
 
 .magenta.transition {
@@ -213,7 +224,7 @@ div {
   background-color: #e15cb8;
   z-index: 88;
   transition: width 1s;
-  transition-delay: 4000ms;
+  transition-delay: 3250ms;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -227,7 +238,7 @@ div {
   background-color: #f75eed;
   z-index: 87;
   transition: height 1s;
-  transition-delay: 4200ms;
+  transition-delay: 3750ms;
 }
 
 .pink.transition {
@@ -237,5 +248,4 @@ div {
 .silver-pink {
   background-color: #f988ff;
   z-index: 86;
-  height: 2400px;
 }
