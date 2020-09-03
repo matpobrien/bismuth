@@ -19,6 +19,7 @@ h1 {
 
 .invisilayer {
   z-index: 87;
+  top: 0;
 }
 
 .hidden {
@@ -76,11 +77,28 @@ h1 {
   justify-content: center;
 }
 
-#remove,
-#enable {
+.remove > * {
   font-family: "Lexend Peta";
   color: #33bb71;
   position: absolute;
+}
+
+#resetting.type {
+  overflow: hidden;
+  animation: typing 6750ms steps(40, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#remove,
+#enable {
   transition: color 1s;
   font-size: 1.25rem;
 }
@@ -214,6 +232,11 @@ h1 {
 }
 .pink.translate-down.transition {
   transform: scaleY(0.6);
+}
+
+#color.fast {
+  transition: transform 1s;
+  transition-delay: 0s;
 }
 
 .orange {
@@ -479,4 +502,5 @@ h1 {
 .light-pink {
   background-color: #fbc9ef;
   z-index: 85;
+  top: 0;
 }

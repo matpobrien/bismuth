@@ -3,6 +3,11 @@
 const colors = document.querySelectorAll("div");
 const buttons = document.querySelectorAll("h1");
 const title = document.getElementById("title");
+const topSides = document.querySelectorAll(".top");
+const bottomSides = document.querySelectorAll(".bottom");
+const leftSides = document.querySelectorAll(".left");
+const rightSides = document.querySelectorAll(".right");
+const reset = document.getElementById("resetting");
 
 title.addEventListener("click", () => {
   colors.forEach((shade) => {
@@ -19,10 +24,7 @@ document
     const pageX = event.clientX;
     const pageY = event.clientY;
     console.log(pageY);
-    const topSides = document.querySelectorAll(".top");
-    const bottomSides = document.querySelectorAll(".bottom");
-    const leftSides = document.querySelectorAll(".left");
-    const rightSides = document.querySelectorAll(".right");
+
     if (pageX > window.innerWidth / 2) {
       leftSides.forEach((layer) => {
         layer.classList.remove("translate-left");
@@ -65,10 +67,6 @@ document
   });
 
 const removeSlide = () => {
-  const leftSides = document.querySelectorAll(".left");
-  const rightSides = document.querySelectorAll(".right");
-  const topSides = document.querySelectorAll(".top");
-  const bottomSides = document.querySelectorAll(".bottom");
   leftSides.forEach((layer) => {
     layer.classList.remove("translate-left");
     layer.classList.remove("translate-right");
@@ -90,14 +88,20 @@ const removeSlide = () => {
 document.getElementById("remove").addEventListener("click", () => {
   document.querySelector(".invisilayer").classList.add("hidden");
   document.getElementById("remove").classList.add("hidden");
-  document.getElementById("enable").classList.remove("hidden");
+  reset.classList.remove("hidden");
+  reset.classList.add("type");
   removeSlide();
+  setTimeout(() => {
+    reset.classList.add("hidden");
+    document.getElementById("enable").classList.remove("hidden");
+  }, 6750);
 });
 
 document.getElementById("enable").addEventListener("click", () => {
   document.querySelector(".invisilayer").classList.toggle("hidden");
   document.getElementById("remove").classList.remove("hidden");
   document.getElementById("enable").classList.add("hidden");
+  reset.classList.remove("type");
 });
 
 const openMusic = () => {
@@ -105,6 +109,7 @@ const openMusic = () => {
   document.querySelector(".light-green").classList.toggle("open-music");
   document.querySelector(".green").classList.toggle("open-music");
   document.querySelector(".blue-green").classList.toggle("open-music");
+  document.getElementById("enable").classList.add("hidden");
 };
 
 document.querySelector(".music").addEventListener("click", () => {
